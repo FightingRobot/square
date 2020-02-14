@@ -1,0 +1,133 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__photo,
+.about__info {
+    width: 48%;
+    margin: 10px 0;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.about__photo {
+    max-width: 555px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.about__info {
+    align-self: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        padding: 20px 0;
+        letter-spacing: 1.2px;
+        font-size: 12px;
+        
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.about__timeline,
+.about__clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    h3 {
+        color: $buddha-gold;
+    }
+
+    p {
+        margin-bottom: 15px;
+        letter-spacing: 1.2px;
+    }
+
+    p + p {
+        border-top: 2px solid $buddha-gold;
+        padding-top: 15px;
+    }
+
+    
+}
+
+.about__column {
+    width: 16%;
+    margin: 10px 0;
+
+    @media screen and (max-width: 800px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 49%;
+    }
+}
+
+.about__clients {
+
+    .about__column {
+
+        @media screen and (max-width: 500px) {
+            width: 30%;
+        }
+    }
+}
+
+.about__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mine-shaft;
+    color: $white;
+    border: none;
+    max-width: 130px;
+    width: 100%;
+    height: 130px;
+}
+
+.about__head_yellow {
+    background-color: $buddha-gold;
+}
+
+.about__quote {
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+        font-style: italic;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}

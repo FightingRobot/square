@@ -1,0 +1,45 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $buddha_gold;
+    color: $white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $white;
+    color: $black;
+}
+
+.btn:active {
+    font-size: .9rem;
+}
+
+.btn_rsvp {
+    width: 70px;
+    height: 70px;
+}
+
+.btn_blog {
+    width: 50%;
+    height: 40px;
+}
+
+.btn_compress {
+    width: 35px;
+    height: 35px;
+}
+
+.btn_swiper-nav {
+    width: 33.33%;
+    height: 35px;
+}
+
+.btn_send {
+    background-color: $mine-shaft;
+    color: $white;
+    border: 1px solid $mine-shaft;
+    font-family: inherit;
+}

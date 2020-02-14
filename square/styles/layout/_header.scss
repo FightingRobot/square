@@ -1,0 +1,123 @@
+.header__content {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.header__left,
+.header__right {
+    display: flex;
+    width: 40%;
+}
+
+.header__center {
+    display: flex;
+    width: 20%;
+}
+
+.burger {
+    display: flex;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    background-color: $black;
+    padding: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: auto;
+        background-color: $white;
+        transition: .6s ease;
+    }
+
+    span::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        transform: translate(0, -6px);
+        transition: .6s ease;
+    }
+
+    span::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        transform: translate(0, 3px);
+        transition: .6s ease;
+    }
+}
+
+.burger_active {
+
+    span {
+        transform: rotate(180deg);
+    }
+
+    span::before {
+        width: 60%;
+        transform: translate(-4px, -3px) rotate(-45deg);
+    }
+
+    span::after {
+        width: 60%;
+        transform: translate(-4px, 1px) rotate(45deg);
+    }
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    transform: scale(0);
+    transform-origin: left;
+    transition: .6s ease;
+
+    a {
+        border-bottom: 2px solid $white;
+        margin: 0 5px;
+    }
+
+    a:hover {
+        border-bottom: 2px solid $buddha-gold;
+    }
+}
+
+.header__menu_shown {
+    transform: scale(1);
+}
+
+.header__center {
+    justify-content: center;
+    align-self: flex-start
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+
+    img {     
+        width: 100%;
+    }
+}
+
+.header__right {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+    i {
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,128 @@
+.main {
+    margin-bottom: 100px;
+    flex-grow: 1;
+
+    @media screen and (max-width: 500px) {
+        margin-bottom: 10px;
+    }
+}
+
+.swiper-container {
+    max-width: 1140px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.swiper-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 263px;
+    height: 263px;
+    background-color: $white;
+    z-index: 10;
+
+    i {
+        margin: 0;
+    }
+
+        @media screen and (max-width: 800px) {
+            height: 70px;
+        }   
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+}
+
+.swiper-navigation__middle {
+    display: flex;
+    justify-content: space-between;
+    height: 193px;
+
+    @media screen and (max-width: 800px) {
+        align-items: flex-end;
+    }
+}
+
+.swiper-navigation__content {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 0;
+
+        @media screen and (max-width: 800px) {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    }
+
+    span {
+        margin-bottom: 10px;
+        font-style: italic;
+
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+
+    p {
+
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+}
+
+.swiper-navigation__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-navigation__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 35px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    position: static;
+    background: none;
+    color: $white;
+    background-color: $mine-shaft;
+    width: 35px;
+    height: 35px;
+
+    i {
+        margin: auto;
+    }
+}
+
+.swiper-pagination {
+    position: static;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.swiper-navigation__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+

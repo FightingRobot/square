@@ -1,0 +1,112 @@
+.facebook_icon, .google_icon, .heart_icon, .instagram_icon, .like_icon, .mail_icon, .mail_icon_yellow, .phone_icon, .pinterest_icon, .refresh_icon, .Reply_icon, .share_icon, .twitter_icon, .minimize_icon, .blank_avatar, .calendar_icon, .comment_icon, .dots_icon{
+	background: url(sprites.png) no-repeat;
+}
+
+.facebook_icon{
+	background-position: 0 0;
+	width: 6px;
+	height: 12px;
+}
+
+.google_icon{
+	background-position: -50px -1px ;
+	width: 12px;
+	height: 12px;
+}
+
+.heart_icon{
+	background-position: -99px -50px ;
+	width: 14px;
+	height: 12px;
+}
+
+.instagram_icon{
+	background-position: -149px 0;
+	width: 11px;
+	height: 11px;
+}
+
+.like_icon{
+	background-position: -148px -50px ;
+	width: 15px;
+	height: 12px;
+}
+
+.mail_icon{
+	background-position: -99px -100px ;
+	width: 13px;
+	height: 10px;
+}
+
+.mail_icon_yellow{
+	background-position: -149px -100px ;
+	width: 15px;
+	height: 11px;
+}
+
+.phone_icon{
+	background-position: -50px -50px ;
+	width: 11px;
+	height: 11px;
+}
+
+.pinterest_icon{
+	background-position: 0 -50px ;
+	width: 12px;
+	height: 15px;
+}
+
+.refresh_icon{
+	background-position: -200px -51px ;
+	width: 18px;
+	height: 14px;
+}
+
+.Reply_icon{
+	background-position: -99px -150px ;
+	width: 14px;
+	height: 15px;
+}
+
+.share_icon{
+	background-position: -2px -150px ;
+	width: 14px;
+	height: 13px;
+}
+
+.twitter_icon{
+	background-position: -102px -1px ;
+	width: 12px;
+	height: 9px;
+}
+
+.minimize_icon{
+	background-position: -50px -150px ;
+	width: 12px;
+	height: 12px;
+}
+
+.blank_avatar{
+	background-position: -2px -103px ;
+	width: 15px;
+	height: 17px;
+}
+
+.calendar_icon{
+	background-position: -201px -1px ;
+	width: 14px;
+	height: 14px;
+}
+
+.comment_icon{
+	background-position: -50px -100px ;
+	width: 15px;
+	height: 12px;
+}
+
+.dots_icon{
+	background-position: -150px -150px ;
+	width: 11px;
+	height: 11px;
+}
+

@@ -1,0 +1,43 @@
+.send-comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px;
+    font-family: $font-stack;
+
+    .send-comment__form-field {
+        width: 45%;
+        padding: 10px 0;
+
+        input {
+            width: 100%;
+            height: 30px;
+            font-family: inherit;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%
+        }
+    }
+
+    textarea {
+        width: 70%;
+        height: 200px;
+        font-family: inherit;
+
+        @media screen and (max-width: 500px) {
+            width: 100%
+        }
+    }
+
+    .btn_send {
+        width: 25%;
+        height: 35px;
+        margin-top: 10px;
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+}
